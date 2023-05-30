@@ -5,5 +5,7 @@ services:
     image: localhost/nginx:latest
     volumes:
       - /home/dennis/repos/Portfolio:/var/www/html/Portfolio
+      - /home/dennis/repos/Portfolio/nginx_config:/etc/nginx/sites-enabled/default
     ports:
       - 4200:4200
+      - 4201:4201
