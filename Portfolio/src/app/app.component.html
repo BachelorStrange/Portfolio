@@ -1,4 +1,7 @@
-<h1>Eine App</h1>
-<app-projects-list></app-projects-list>
+<h1>Portfolio</h1>
+<ng-container *ngIf="_shapeSelector">
+    <div><app-projects-list></app-projects-list></div>
+</ng-container>
+
 
 <router-outlet></router-outlet>
